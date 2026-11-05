@@ -1,0 +1,35 @@
+<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<style>/*@base.css*/
+body{display:grid;place-items:center;align-content:center;gap:6px}
+canvas{width:150px;height:150px}
+span{color:#b4aec7}
+</style>
+<canvas id="cv"></canvas><span id="tx"></span>
+<script>
+const D = __DATOS__; tx.textContent = D.texto;
+const g = cv.getContext("2d"), d = devicePixelRatio || 1, S = 150; cv.width = cv.height = S * d; g.scale(d, d);
+const c = S / 2, T = Math.PI * 2, blips = [...Array(7)].map(() => ({a: Math.random() * T, r: .2 + Math.random() * .7}));
+let t = 0;
+(function bucle() {
+  t += .016; g.clearRect(0, 0, S, S);
+  if (D.modo === "radar") {            // barrido: agrupar es buscar densidad
+    g.strokeStyle = "rgba(62,240,154,.25)"; g.lineWidth = 1;
+    for (let i = 1; i <= 5; i++) { g.beginPath(); g.arc(c, c, i * 13.5, 0, T); g.stroke(); }
+    for (let i = 0; i < 12; i++) { g.beginPath(); g.moveTo(c, c); g.lineTo(c + 68 * Math.cos(i * T / 12), c + 68 * Math.sin(i * T / 12)); g.stroke(); }
+    const a = t * 2.2, cg = g.createConicGradient(a - .35 * T, c, c);
+    cg.addColorStop(0, "rgba(62,240,154,0)"); cg.addColorStop(.35, "rgba(62,240,154,.45)"); cg.addColorStop(.351, "rgba(62,240,154,0)");
+    g.fillStyle = cg; g.beginPath(); g.arc(c, c, 68, 0, T); g.fill();
+    g.strokeStyle = "#3ef09a"; g.beginPath(); g.moveTo(c, c); g.lineTo(c + 68 * Math.cos(a), c + 68 * Math.sin(a)); g.stroke();
+    blips.forEach(b => { const k = 1 - (((a - b.a) % T) + T) % T / T; g.fillStyle = `rgba(62,240,154,${k * k})`; g.beginPath(); g.arc(c + 68 * b.r * Math.cos(b.a), c + 68 * b.r * Math.sin(b.a), 3, 0, T); g.fill(); });
+  } else {                              // anillos: reducir es comprimir
+    for (let i = 0; i < 6; i++) {
+      const f = (t * .35 + i / 6) % 1, gr = g.createLinearGradient(0, 0, S, S);
+      gr.addColorStop(0, "#a855f7"); gr.addColorStop(1, "#6366f1");
+      g.strokeStyle = gr; g.globalAlpha = 1 - f; g.lineWidth = 2.2 * (1 - f) + .4; g.shadowColor = "#8b5cf6"; g.shadowBlur = 10;
+      g.beginPath(); g.arc(c, c, 8 + f * 62, 0, T); g.stroke();
+    }
+    g.globalAlpha = 1; g.shadowBlur = 0;
+  }
+  requestAnimationFrame(bucle);
+})();
+</script>

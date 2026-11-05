@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..700&display=swap");
+
+/* ---------- Paleta: verde bosque + aguamarina sobre tinta verde ---------- */
+:root{
+  --tinta:#0a1712;            /* fondo base (antes #0e0c16) */
+  --vidrio:rgba(255,255,255,.045);
+  --borde:rgba(127,255,212,.14);
+  --verde:#28866a;            /* sustituye al violeta */
+  --verde-hondo:#14604f;
+  --aqua:#7fffd4;             /* sustituye al cian: aguamarina */
+  --texto:#e6f4ec;            /* texto principal: siempre claro sobre fondo oscuro */
+  --suave:#a9c4b6;            /* texto secundario (contraste > 7:1 sobre --tinta) */
+  --curva:cubic-bezier(.2,.8,.2,1);
+  color-scheme:dark;
+}
+html,body,.stApp,button,input,textarea,[data-baseweb]{font-family:"Bricolage Grotesque",system-ui,sans-serif!important}
+.stApp{
+  color:var(--texto);
+  background:
+    radial-gradient(1100px 560px at 85% -12%,rgba(40,134,106,.30),transparent 60%),
+    radial-gradient(800px 480px at -8% 8%,rgba(127,255,212,.10),transparent 55%),
+    var(--tinta)
+}
+header[data-testid="stHeader"]{background:transparent}
+.block-container{padding-top:1.6rem;max-width:1600px}
+iframe{border:0;border-radius:16px}
+
+/* ---------- Texto: contraste garantizado ---------- */
+h1,h2,h3,h4,h5{color:#f1fff9!important;letter-spacing:-.01em}
+[data-testid="stMarkdownContainer"] p,[data-testid="stMarkdownContainer"] li,
+label,label p,[data-testid="stWidgetLabel"] p{color:var(--texto)!important}
+[data-testid="stCaptionContainer"],[data-testid="stCaptionContainer"] *{color:var(--suave)!important}
+::selection{background:var(--aqua);color:#0a1712}
+
+/* paneles de vidrio con brillo que sigue al puntero (fx.html) */
+[data-testid="stVerticalBlockBorderWrapper"]{position:relative;background:var(--vidrio);border:1px solid var(--borde)!important;border-radius:18px;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+[data-testid="stVerticalBlockBorderWrapper"]::before,.kpi::before{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;background:radial-gradient(240px circle at var(--mx,-999px) var(--my,-999px),rgba(127,255,212,.14),transparent 65%)}
+
+/* ---------- Botón principal: reflejo especular y pulsación ---------- */
+[data-testid="stBaseButton-primary"]{position:relative;overflow:hidden;width:100%;border:1px solid rgba(127,255,212,.30);border-radius:14px;padding:.55rem 1rem;
+  background:linear-gradient(160deg,var(--verde),var(--verde-hondo));color:#fff!important;font-weight:600;transition:transform .15s var(--curva),box-shadow .25s}
+[data-testid="stBaseButton-primary"] *{color:#fff!important}
+[data-testid="stBaseButton-primary"]::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(130px circle at var(--mx,-999px) var(--my,-999px),rgba(127,255,212,.34),transparent 60%)}
+[data-testid="stBaseButton-primary"]:hover{box-shadow:0 8px 28px rgba(127,255,212,.32)}
+[data-testid="stBaseButton-primary"]:active{transform:scale(.97)}
+[data-testid="stBaseButton-primary"]:disabled{opacity:.4}
+
+/* botones secundarios y de descarga: vidrio con borde aguamarina */
+[data-testid="stBaseButton-secondary"],div.stDownloadButton>button{background:var(--vidrio);border:1px solid var(--borde);border-radius:12px;color:var(--texto)!important}
+[data-testid="stBaseButton-secondary"] *,div.stDownloadButton>button *{color:var(--texto)!important}
+[data-testid="stBaseButton-secondary"]:hover,div.stDownloadButton>button:hover{border-color:var(--aqua);box-shadow:0 0 0 3px rgba(127,255,212,.18)}
+
+/* selectores de tipo y de modo (varias versiones de Streamlit) */
+[data-testid="stBaseButton-segmented_control"],[data-testid="stBaseButton-segmented_controlActive"],button[data-variant="segmented_control"]{border-radius:99px!important;padding:.35rem 1.1rem;color:var(--texto)!important;transition:background .2s,color .2s,transform .15s var(--curva)}
+[data-testid="stBaseButton-segmented_controlActive"],button[data-variant="segmented_control"][aria-checked="true"]{background:var(--verde)!important;border-color:var(--aqua)!important;color:#fff!important}
+[data-testid="stBaseButton-segmented_control"]:active,button[data-variant="segmented_control"]:active{transform:scale(.96)}
+[data-testid="stButtonGroup"],[data-testid="stSegmentedControl"]{gap:.4rem}
+
+/* ---------- Entradas sobre vidrio oscuro ---------- */
+input,textarea,[data-baseweb="input"],[data-baseweb="base-input"],[data-baseweb="textarea"],[data-baseweb="select"]>div{
+  background:rgba(255,255,255,.06)!important;color:var(--texto)!important;border-color:var(--borde)!important}
+[data-baseweb="select"] *,[data-baseweb="select"] svg{color:var(--texto)!important;fill:var(--texto)!important}
+[data-baseweb="popover"],[data-baseweb="popover"] ul,[data-baseweb="menu"]{background:#102a20!important}
+[data-baseweb="popover"] li,[data-baseweb="popover"] li *{color:var(--texto)!important}
+[data-baseweb="popover"] li:hover{background:rgba(127,255,212,.14)!important}
+[data-baseweb="tag"]{background:rgba(127,255,212,.18)!important}
+[data-baseweb="tag"] *{color:#f1fff9!important}
+[data-testid="stFileUploaderDropzone"]{background:var(--vidrio)!important;border:1.5px dashed rgba(127,255,212,.45)!important;border-radius:14px}
+[data-testid="stFileUploaderDropzone"] *{color:var(--texto)!important}
+[data-testid="stFileUploaderDropzone"] button{background:var(--verde)!important;border:none}
+[data-testid="stFileUploaderDropzone"] button *{color:#fff!important}
+
+/* deslizadores: halo elástico al tocar el tirador */
+[data-baseweb="slider"] [role="slider"],[data-testid="stSlider"] div:has(> input[type="range"]){background:var(--aqua)!important;transition:box-shadow .25s cubic-bezier(.34,1.56,.64,1)}
+[data-baseweb="slider"] [role="slider"]:hover,[data-testid="stSlider"] div:has(> input[type="range"]):hover,[data-testid="stSlider"] div:has(> input[type="range"]):active{box-shadow:0 0 0 7px rgba(127,255,212,.25)}
+[data-testid="stSliderThumbValue"],[data-testid="stSliderThumbValue"] *{color:var(--aqua)!important;font-weight:700}
+[data-testid="stTickBarMin"],[data-testid="stTickBarMax"]{color:var(--suave)!important}
+
+/* ---------- Pestañas, expanders, tablas ---------- */
+.stTabs [data-baseweb="tab-list"]{border-bottom:1px solid var(--borde)}
+.stTabs [data-baseweb="tab"],.stTabs [data-baseweb="tab"] *{color:var(--suave)!important;background:transparent}
+.stTabs [aria-selected="true"],.stTabs [aria-selected="true"] *{color:var(--aqua)!important}
+.stTabs [data-baseweb="tab-highlight"]{background:var(--aqua)!important}
+[data-testid="stExpander"] details{background:var(--vidrio);border:1px solid var(--borde);border-radius:14px}
+[data-testid="stExpander"] summary,[data-testid="stExpander"] summary *{color:var(--texto)!important}
+[data-testid="stDataFrame"]{border:1px solid var(--borde);border-radius:14px;overflow:hidden}
+hr{border-color:var(--borde)!important}
+
+/* barra lateral */
+section[data-testid="stSidebar"]{background:linear-gradient(180deg,#0c1f17,#0a1712);border-right:1px solid var(--borde)}
+
+/* avisos */
+[data-testid="stAlert"]{background:var(--vidrio);border:1px solid var(--borde);border-left:4px solid var(--aqua);border-radius:14px;color:var(--texto)}
+[data-testid="stAlert"] *{color:inherit}
+[data-testid="stButton"],.stButton,div:has(> [data-testid="stBaseButton-primary"]){width:100%}
+
+/* métricas nativas de Streamlit en vidrio */
+div[data-testid="stMetric"]{background:var(--vidrio);border:1px solid var(--borde);border-left:4px solid var(--aqua);border-radius:16px;padding:12px 16px}
+div[data-testid="stMetric"] [data-testid="stMetricLabel"] *{color:var(--suave)!important}
+div[data-testid="stMetric"] [data-testid="stMetricValue"] *{color:#f1fff9!important}
+
+/* tarjetas de cifras clave */
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:.2rem 0 1rem}
+.kpi{position:relative;padding:12px 16px;border-radius:16px;background:var(--vidrio);border:1px solid var(--borde);color:var(--texto);animation:sube .5s var(--curva) backwards}
+.kpi:nth-child(2){animation-delay:.05s}.kpi:nth-child(3){animation-delay:.1s}.kpi:nth-child(4){animation-delay:.15s}.kpi:nth-child(n+5){animation-delay:.2s}
+.kpi b{display:block;font-size:1.7rem;font-weight:600;letter-spacing:-.02em;line-height:1.15;color:#f1fff9}
+.kpi span{color:var(--suave);font-size:.85rem}
+@keyframes sube{from{opacity:0;transform:translateY(8px)}}
+
+/* desenfoque gradual en el borde inferior */
+.stApp::after{content:"";position:fixed;left:0;right:0;bottom:0;height:4.5rem;pointer-events:none;z-index:50;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+  -webkit-mask-image:linear-gradient(to top,#000,transparent);mask-image:linear-gradient(to top,#000,transparent)}
+::-webkit-scrollbar{width:10px;height:10px}::-webkit-scrollbar-thumb{background:rgba(127,255,212,.22);border-radius:9px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}

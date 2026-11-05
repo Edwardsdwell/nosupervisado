@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..700&family=JetBrains+Mono:wght@500&display=swap");
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:transparent;color:#e9e6f2;font:14px/1.5 "Bricolage Grotesque",system-ui,sans-serif;overflow:hidden}
+.pill{font:inherit;color:#c9c4da;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:99px;padding:5px 13px;cursor:pointer;transition:background .2s,color .2s,transform .15s cubic-bezier(.2,.8,.2,1)}
+.pill:hover{background:rgba(255,255,255,.1)}
+.pill:active{transform:scale(.96)}
+.pill.on{background:#8b5cf6;border-color:#8b5cf6;color:#fff}
+:focus-visible{outline:2px solid #22d3ee;outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
