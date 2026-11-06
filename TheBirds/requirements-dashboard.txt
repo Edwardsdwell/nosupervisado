@@ -1,0 +1,5 @@
+-r requirements.txt
+streamlit>=1.41
+plotly>=5.24
+geopandas>=1.0
+shapely>=2.0

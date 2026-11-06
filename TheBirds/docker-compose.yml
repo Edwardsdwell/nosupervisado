@@ -1,0 +1,14 @@
+services:
+  db:
+    image: postgis/postgis:16-3.4
+    container_name: aves_db
+    environment:
+      POSTGRES_USER: aves
+      POSTGRES_PASSWORD: Aves
+      POSTGRES_DB: aves_db
+    ports: ["5432:5432"]
+    volumes: ["pgdata:/var/lib/postgresql/data"]
+    shm_size: 512mb
+    restart: unless-stopped
+volumes:
+  pgdata:
