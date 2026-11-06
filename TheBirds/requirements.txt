@@ -1,0 +1,13 @@
+psycopg[binary]>=3.2
+requests>=2.31
+tqdm
+python-dotenv
+pillow
+imagehash
+opencv-python-headless
+numpy
+soundfile
+rasterio
+duckdb
+pandas
+pyarrow
