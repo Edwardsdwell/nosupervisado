@@ -12,8 +12,7 @@ from datetime import datetime, timezone
 import pandas as pd
 from common import connect, log, DATA_DIR
 
-OUT = DATA_DIR / "export"
-
+OUT = DATA_DIR / "TheBirds" / "export"
 QUERIES = {
     "taxa": "SELECT t.* FROM taxa t JOIN dataset_scope ds USING (taxon_key)",
     "vernacular_names": "SELECT v.* FROM vernacular_names v JOIN dataset_scope ds USING (taxon_key)",

@@ -172,7 +172,7 @@ if page == "Resumen":
         if counts.get("media") is not None and counts["media"]:
             media_stats = pd.DataFrame(con.execute("SELECT type, download_status, count(*) AS n FROM media GROUP BY 1,2 ORDER BY 1,2").fetchall(), columns=["Tipo","Estado","Cantidad"])
             st.dataframe(media_stats, use_container_width=True, hide_index=True)
-            by_status = media_stats.pivot(index="type", columns="download_status", values="n").fillna(0)
+            by_status = media_stats.pivot(index="Tipo",columns="Estado",values="Cantidad").fillna(0)
             st.bar_chart(by_status)
             size = con.execute("SELECT coalesce(sum(bytes),0) FROM media WHERE download_status='ok'").fetchone()[0]
             st.metric("Medios descargados", f"{size/1024**3:.3f} GB", help="Suma de bytes registrados en la tabla media")
@@ -198,13 +198,22 @@ elif page == "Pipeline y descargas":
         max_taxa = d.number_input("Máximo de especies", 1, 1000, 100)
         seed = st.number_input("Semilla de selección", value=20261106)
         langs = st.multiselect("Idiomas de textos", ["es","en","pt","fr","de"], default=["es","en"])
-    stages = [
-        ("init","Inicializar esquema"), ("taxonomy","Seleccionar especies"),
-        ("occurrences_image","Consultar ocurrencias de imágenes"), ("occurrences_audio","Consultar ocurrencias de audio"),
-        ("texts","Recopilar textos"), ("download_image","Descargar imágenes"), ("download_audio","Descargar audios"),
-        ("quality","Evaluar calidad multimedia"), ("pairs_splits","Crear pares y particiones"),
-        ("environment","Datos ambientales (opcional)"), ("export","Exportación Parquet estándar"), ("validate","Validación final")]
-    st.warning("La opción de pipeline completo incluye inicialización. Úsala solo si sabes que no hay datos previos que deban preservarse.")
+    
+        stages = [
+                ("init", "Inicializar esquema"),
+                ("taxonomy", "Seleccionar especies"),
+                ("occurrences_image", "Consultar ocurrencias de imágenes"),
+                ("occurrences_audio", "Consultar ocurrencias de audio"),
+                ("texts", "Recopilar textos"),
+                ("download_image", "Descargar imágenes"),
+                ("download_audio", "Descargar audios"),
+                ("media_import", "Importar imágenes y audio a PostgreSQL"),
+                ("quality", "Evaluar calidad multimedia"),
+                ("pairs_splits", "Crear parejas y particiones"),
+                ("environment", "Datos ambientales"),
+                ("export", "Exportar dataset"),
+                ("validate", "Validación final"),]
+
     if status == "ejecutando":
         if st.button("Detener proceso", type="secondary"): stop_job()
     else:
@@ -226,11 +235,18 @@ elif page == "Pipeline y descargas":
 
 elif page == "Base de datos / CRUD":
     st.subheader("Explorador y mantenimiento de tablas")
-    tables = [t for t in get_tables(con) if t in APP_TABLES or t in READ_ONLY]
+    available_tables = set(get_tables(con))
+    tables = [t for t in APP_TABLES if t in available_tables]
+    tables += [t for t in READ_ONLY if t in available_tables]
+
+    default_table = next(
+            (t for t in ["observations", "taxa", "media"] if t in tables),
+            tables[0] if tables else None
+        )
     if not tables:
         st.warning("No hay tablas del proyecto. Ejecuta primero `01_init_db.py`.")
     else:
-        table = st.selectbox("Tabla", tables)
+        table = st.selectbox("Tabla",tables,index=tables.index(default_table) if default_table else 0,key="crud_table")
         cols_meta = table_columns(con, table)
         pks = primary_keys(con, table)
         limit = st.select_slider("Filas a mostrar", options=[100,250,500,1000,2500], value=500)
