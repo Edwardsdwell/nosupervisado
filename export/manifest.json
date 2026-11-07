@@ -1,0 +1,30 @@
+{
+  "created_at": "2026-11-06T21:17:41.028103+00:00",
+  "rows": {
+    "taxa": 100,
+    "vernacular_names": 428,
+    "observations": 104,
+    "media": 105,
+    "texts": 101,
+    "pairs": 1,
+    "annotations": 0
+  },
+  "stats": {
+    "media_by_type": {
+      "image": 66,
+      "audio": 39
+    },
+    "bytes_total": 7178946,
+    "licenses": {
+      "CC-BY-4.0": 51,
+      "CC-BY-NC-SA-4.0": 17,
+      "CC-BY-NC-4.0": 15,
+      "CC-BY-NC-ND-4.0": 8,
+      "CC0-1.0": 6,
+      "CC-BY-NC-ND-2.5": 5,
+      "CC-BY-NC-SA-3.0": 3
+    }
+  },
+  "exclude_nc": false,
+  "notes": "Cada archivo conserva la licencia de su fuente; ver ATTRIBUTION.csv. Texto de Wikipedia: CC-BY-SA-4.0."
+}

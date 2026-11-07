@@ -1,0 +1,106 @@
+media_id,obs_id,type,license,rights_holder,url_original
+150,gbif:4862942336,audio,CC-BY-NC-SA-4.0,Gilles Willem,https://xeno-canto.org/sounds/uploaded/JWBKCAJLUM/XC899609-Arabian-Scops-Owl-2.mp3
+151,gbif:2243768869,audio,CC-BY-NC-SA-4.0,Matthias Feuersenger,https://xeno-canto.org/sounds/uploaded/HBPYQXTJEV/XC371199-2014_01_03_T106_African-Scops-Owl_Oman_Wadi_Darbat_19Uhr30.mp3
+186,gbif:2243587478,audio,CC-BY-NC-SA-3.0,Lars Lachmann,https://xeno-canto.org/sounds/uploaded/HEYJSRUDZZ/XC152362-Sooty%20Gull_20130801_223246_prepared.mp3
+29,gbif:3416144158,image,CC0-1.0,Frank Thomas Sautter,https://inaturalist-open-data.s3.amazonaws.com/photos/168437580/original.jpg
+32,gbif:4436434197,image,CC-BY-4.0,Liam southwell,https://inaturalist-open-data.s3.amazonaws.com/photos/332083287/original.jpeg
+34,gbif:4067303630,image,CC-BY-4.0,Nathan Ruser,https://inaturalist-open-data.s3.amazonaws.com/photos/225662675/original.jpeg
+35,gbif:5938165831,image,CC-BY-4.0,Sheelagh Halsey,https://inaturalist-open-data.s3.amazonaws.com/photos/603877612/original.jpg
+36,gbif:4506345531,image,CC-BY-NC-4.0,John D Reynolds,https://inaturalist-open-data.s3.amazonaws.com/photos/342347227/original.jpg
+42,gbif:5760159208,image,CC-BY-4.0,Martin Rady,https://inaturalist-open-data.s3.amazonaws.com/photos/560185666/original.jpg
+44,gbif:5938391353,image,CC-BY-4.0,Mark Clarke,https://inaturalist-open-data.s3.amazonaws.com/photos/604044386/original.jpg
+47,gbif:2980826264,image,CC-BY-4.0,Christoph Moning,https://inaturalist-open-data.s3.amazonaws.com/photos/103270038/original.jpeg
+50,gbif:4009727255,image,CC-BY-4.0,Jason Alexander,https://inaturalist-open-data.s3.amazonaws.com/photos/249350569/original.jpg
+52,gbif:4987816832,image,CC0-1.0,Stuart,https://inaturalist-open-data.s3.amazonaws.com/photos/452163458/original.jpeg
+53,gbif:3044649375,image,CC-BY-4.0,Eamon Corbett,https://inaturalist-open-data.s3.amazonaws.com/photos/113142405/original.jpeg
+57,gbif:6131683632,image,CC-BY-4.0,Jan Ebr & Ivana Ebrová,https://inaturalist-open-data.s3.amazonaws.com/photos/607518317/original.jpg
+58,gbif:5897732115,image,CC-BY-4.0,Dan Riley,https://inaturalist-open-data.s3.amazonaws.com/photos/590276980/original.jpg
+63,gbif:1899759514,image,CC-BY-4.0,Adrianh M. Orozco,https://inaturalist-open-data.s3.amazonaws.com/photos/23553198/original.jpeg
+66,gbif:2265885926,image,CC-BY-4.0,James M. Maley,https://inaturalist-open-data.s3.amazonaws.com/photos/41717009/original.jpg
+69,gbif:6870141543,image,CC-BY-4.0,Donald Davesne,https://inaturalist-open-data.s3.amazonaws.com/photos/749696008/original.jpg
+72,gbif:4952361377,image,CC-BY-4.0,Nathan Ruser,https://inaturalist-open-data.s3.amazonaws.com/photos/439333542/original.jpg
+75,gbif:4923675911,image,CC0-1.0,James Eaton,https://inaturalist-open-data.s3.amazonaws.com/photos/416820928/original.jpeg
+76,gbif:4442556092,image,CC-BY-NC-4.0,Pete Woodall,https://inaturalist-open-data.s3.amazonaws.com/photos/336068080/original.jpeg
+80,gbif:3858725452,image,CC-BY-4.0,Donald Davesne,https://inaturalist-open-data.s3.amazonaws.com/photos/209817084/original.jpg
+81,gbif:3747252911,image,CC-BY-4.0,Vincent A. Vos,https://inaturalist-open-data.s3.amazonaws.com/photos/183803743/original.jpeg
+82,gbif:5134187150,image,CC-BY-4.0,Edoardo Nardelli,https://inaturalist-open-data.s3.amazonaws.com/photos/482676547/original.png
+86,gbif:4516541764,image,CC-BY-NC-4.0,Chris Harrison,https://inaturalist-open-data.s3.amazonaws.com/photos/347621124/original.jpg
+187,gbif:2243564822,audio,CC-BY-NC-SA-3.0,Thijs Fijen,https://xeno-canto.org/sounds/uploaded/YEEQSGIKMT/XC118156-Sooty%20Gull_20121124_06_zang.mp3
+88,gbif:4127138581,image,CC-BY-4.0,CH Hemphill,https://inaturalist-open-data.s3.amazonaws.com/photos/284615078/original.jpeg
+96,gbif:5063160116,image,CC-BY-NC-4.0,Alexander Lees,https://inaturalist-open-data.s3.amazonaws.com/photos/464947039/original.jpg
+98,gbif:3044930353,image,CC-BY-4.0,Thomas Ebner,https://inaturalist-open-data.s3.amazonaws.com/photos/113083775/original.jpeg
+106,gbif:5282209917,image,CC-BY-4.0,Ian Dugdale,https://inaturalist-open-data.s3.amazonaws.com/photos/547347745/original.jpg
+107,gbif:6234196620,image,CC-BY-NC-4.0,Wich’yanan (Jay) Limparungpatthanakij,https://inaturalist-open-data.s3.amazonaws.com/photos/641403886/original.jpg
+113,gbif:4177053402,image,CC-BY-4.0,Justin Ponder,https://inaturalist-open-data.s3.amazonaws.com/photos/107917165/original.jpeg
+114,gbif:4980491893,image,CC-BY-4.0,Afsar Nayakkan,https://inaturalist-open-data.s3.amazonaws.com/photos/356495999/original.jpeg
+115,gbif:5828919636,image,CC-BY-4.0,Quentin Benet-Cibois,https://inaturalist-open-data.s3.amazonaws.com/photos/565089134/original.jpg
+116,gbif:6235106570,image,CC-BY-4.0,Morgan Caygill,https://inaturalist-open-data.s3.amazonaws.com/photos/228960416/original.jpg
+117,gbif:3079567788,image,CC-BY-4.0,tcantrell52,https://inaturalist-open-data.s3.amazonaws.com/photos/73111929/original.jpg
+118,gbif:5827466424,image,CC-BY-4.0,Zac Peterson,https://inaturalist-open-data.s3.amazonaws.com/photos/563496509/original.jpg
+119,gbif:4416729758,image,CC-BY-4.0,Ged Tranter,https://inaturalist-open-data.s3.amazonaws.com/photos/322091776/original.jpg
+120,gbif:2465186595,image,CC-BY-4.0,Andrew Allen,https://inaturalist-open-data.s3.amazonaws.com/photos/55937561/original.jpg
+121,gbif:4138704525,image,CC-BY-4.0,Agustina Medina,https://inaturalist-open-data.s3.amazonaws.com/photos/293286635/original.jpeg
+122,gbif:6869192148,image,CC0-1.0,Ricardo Mitidieri,https://inaturalist-open-data.s3.amazonaws.com/photos/323902821/original.jpg
+141,gbif:3301991270,image,CC-BY-NC-4.0,Wich’yanan (Jay) Limparungpatthanakij,https://inaturalist-open-data.s3.amazonaws.com/photos/133529827/original.jpg
+93,gbif:4458610237,image,CC-BY-4.0,bogsuckers,https://inaturalist-open-data.s3.amazonaws.com/photos/327149378/original.jpeg
+94,gbif:2856730075,image,CC-BY-4.0,Christoph Moning,https://inaturalist-open-data.s3.amazonaws.com/photos/91598727/original.jpeg
+103,gbif:6519380798,image,CC0-1.0,Stefan C,https://inaturalist-open-data.s3.amazonaws.com/photos/717851534/original.jpg
+139,gbif:5282116782,image,CC-BY-4.0,Ian Dugdale,https://inaturalist-open-data.s3.amazonaws.com/photos/547358078/original.jpg
+149,gbif:2432409669,audio,CC-BY-NC-ND-2.5,Mike Catsis,https://xeno-canto.org/sounds/uploaded/ZLOFZBWWBW/White%20bellied%20Pitohui.mp3
+169,gbif:4908746136,audio,CC-BY-NC-4.0,congonaturalist,https://static.inaturalist.org/sounds/1119440.m4a?1720023350
+170,gbif:4508375493,audio,CC-BY-NC-SA-4.0,Michael Hurben,https://xeno-canto.org/sounds/uploaded/ESJQFJUOUH/XC856112-301825891.wav
+171,gbif:4091860089,audio,CC-BY-4.0,Zac Peterson,https://static.inaturalist.org/sounds/643601.wav?1681527734
+172,gbif:2609670265,audio,CC-BY-NC-SA-4.0,Karyadi Baskoro,https://xeno-canto.org/sounds/uploaded/DAATLWXVNP/XC376178-Takur-Tenggeret_Darungan_161220_02.mp3
+173,gbif:3034451603,audio,CC-BY-NC-SA-4.0,Charlie Vogt,https://xeno-canto.org/sounds/uploaded/NYTXYAQSTH/XC619381-R09_0217%20Tuxtla%20Quail-Dove.mp3
+174,gbif:2243776235,audio,CC-BY-NC-ND-4.0,Marc Anderson,https://xeno-canto.org/sounds/uploaded/EHGWCIGILC/XC383678-Quailthrush_Western_KS6_Kirkalocka_Quartz_Ridge_Dawn.mp3
+175,gbif:2243569588,audio,CC-BY-NC-ND-4.0,Frank Lambert,https://xeno-canto.org/sounds/uploaded/YTUXOCTUEM/XC127412-Coracina_ceramensis_nom-FL%20Seram%201100m%2026Aug12%20LS112558.mp3
+145,gbif:3915535785,image,CC-BY-4.0,David F. Belmonte,https://inaturalist-open-data.s3.amazonaws.com/photos/232603375/original.jpg
+176,gbif:3858725452,audio,CC-BY-4.0,Donald Davesne,https://static.inaturalist.org/sounds/484715.wav?1656423795
+177,gbif:2848553873,audio,CC-BY-NC-SA-4.0,Arthur Gomes,https://xeno-canto.org/sounds/uploaded/EOJHNAIHEM/XC538457-Sporophila%20angolensis%201.mp3
+178,gbif:2992200527,audio,CC-BY-NC-SA-4.0,Iain Woxvold,https://xeno-canto.org/sounds/uploaded/IASEWSJZCS/XC601966-Ptilotula%20flavescens%20flavescens_iw_190904_02.mp3
+179,gbif:5995341927,audio,CC-BY-NC-SA-4.0,Stanislas Wroza,https://xeno-canto.org/sounds/uploaded/SDPCHKOHRH/XC997530-B%C3%A9casseau-rousset-vol-%2B.wav
+180,gbif:2243553005,audio,CC-BY-NC-ND-2.5,Bernabe Lopez-Lanus,https://xeno-canto.org/sounds/uploaded/BYLLSJRVDZ/Tryngites%20subruficollis_Estancia%20Virocay_ruta%20174_Santo%20Tome_Corrientes_Argentina_23NOV2011_Bernabe%20Lopez-Lanus.mp3
+181,gbif:5995337698,audio,CC-BY-NC-ND-4.0,Lim Ying Hien,https://xeno-canto.org/sounds/uploaded/NXHTMHMNSS/XC996698-Brown-streaked-Flycatcher-juv.-call-20250510-Taiping-xeno.mp3
+183,gbif:6452273805,audio,CC-BY-NC-4.0,benjamynweil,https://static.inaturalist.org/sounds/856243.wav?1701784485
+182,gbif:3051576379,audio,CC-BY-NC-SA-4.0,Nigel Jackett,https://xeno-canto.org/sounds/uploaded/KXKBPMRFTY/XC620848-BSFL_20201014_0629.mp3
+184,gbif:2432399116,audio,CC-BY-NC-SA-3.0,Bas van Balen,https://xeno-canto.org/sounds/uploaded/VSXHBVQJDA/XC140362-Lichenostomus%20subfrenatus_12iv02_xxx_154A428.mp3
+152,gbif:2848558737,audio,CC-BY-NC-SA-4.0,Julio Delgado,https://xeno-canto.org/sounds/uploaded/IERLFCCTTZ/XC535545-20200206_065700_01.mp3
+153,gbif:2432404764,audio,CC-BY-NC-ND-2.5,Bas van Balen,https://xeno-canto.org/sounds/uploaded/VSXHBVQJDA/Bramon15xi95_0520BvB%201.mp3
+185,gbif:2243646917,audio,CC-BY-NC-ND-4.0,Peter Boesman,https://xeno-canto.org/sounds/uploaded/OOECIWCSWV/XC229739-Bright-rumped%20Yellow-Finch%20B%2015844.mp3
+1,gbif:3061544755,image,CC-BY-4.0,Jan Ebr & Ivana Ebrová,https://inaturalist-open-data.s3.amazonaws.com/photos/116189479/original.jpg
+2,gbif:1838016176,image,CC-BY-NC-4.0,Boris Delahaie,https://inaturalist-open-data.s3.amazonaws.com/photos/14890467/original.jpg
+3,gbif:2980852241,image,CC-BY-4.0,Christoph Moning,https://inaturalist-open-data.s3.amazonaws.com/photos/103271127/original.jpeg
+4,gbif:2597835827,image,CC-BY-4.0,Julia Moning,https://inaturalist-open-data.s3.amazonaws.com/photos/60304506/original.jpeg
+5,gbif:4525179562,image,CC-BY-4.0,Rob Foster,https://inaturalist-open-data.s3.amazonaws.com/photos/351823544/original.jpeg
+6,gbif:3338099481,image,CC-BY-NC-4.0,Nick Moore,https://inaturalist-open-data.s3.amazonaws.com/photos/151491197/original.jpg
+7,gbif:4954674896,image,CC-BY-NC-4.0,Eddy Smith,https://inaturalist-open-data.s3.amazonaws.com/photos/440868948/original.jpg
+8,gbif:4507861731,image,CC-BY-4.0,ꦥꦤ꧀ꦗꦶꦒꦸꦱ꧀ꦠꦶꦄꦏ꧀ꦧꦂ,https://inaturalist-open-data.s3.amazonaws.com/photos/251288791/original.jpeg
+9,gbif:5154445246,image,CC-BY-4.0,"Legawa, Everest C.",https://inaturalist-open-data.s3.amazonaws.com/photos/503865928/original.jpeg
+10,gbif:5063035926,image,CC-BY-NC-4.0,Pete Woodall,https://inaturalist-open-data.s3.amazonaws.com/photos/464220883/original.jpeg
+11,gbif:3067761366,image,CC-BY-NC-ND-4.0,Gabe T,https://inaturalist-open-data.s3.amazonaws.com/photos/12534211/original.jpeg
+12,gbif:2856569311,image,CC-BY-4.0,Stosh Morency,https://inaturalist-open-data.s3.amazonaws.com/photos/8030396/original.jpg
+13,gbif:4145618387,image,CC0-1.0,Ruth Gutiérrez Oliveros,https://inaturalist-open-data.s3.amazonaws.com/photos/154290691/original.jpeg
+14,gbif:4034592860,image,CC-BY-4.0,David F. Belmonte,https://inaturalist-open-data.s3.amazonaws.com/photos/255794537/original.jpg
+17,gbif:6184911589,image,CC-BY-4.0,Enoch Cheuk,https://inaturalist-open-data.s3.amazonaws.com/photos/491112657/original.jpeg
+19,gbif:2005332473,image,CC-BY-4.0,Tristan Jobin,https://inaturalist-open-data.s3.amazonaws.com/photos/31390710/original.jpeg
+20,gbif:5008340253,image,CC-BY-4.0,Dan Vickers,https://inaturalist-open-data.s3.amazonaws.com/photos/458779501/original.jpg
+23,gbif:4453917295,image,CC-BY-4.0,Jacobus Retief,https://inaturalist-open-data.s3.amazonaws.com/photos/336690764/original.jpeg
+24,gbif:4973844621,image,CC-BY-4.0,Elliot Greiner,https://inaturalist-open-data.s3.amazonaws.com/photos/443897867/original.jpeg
+27,gbif:4982273733,image,CC-BY-4.0,Tristan Jobin,https://inaturalist-open-data.s3.amazonaws.com/photos/450047639/original.jpeg
+105,gbif:6451727980,image,CC-BY-4.0,avocat,https://inaturalist-open-data.s3.amazonaws.com/photos/699765476/original.jpg
+144,gbif:5935154545,image,CC-BY-4.0,Jan Ebr & Ivana Ebrová,https://inaturalist-open-data.s3.amazonaws.com/photos/355306732/original.jpeg
+154,gbif:4038147492,audio,CC-BY-NC-SA-4.0,Jelle Scharringa,https://xeno-canto.org/sounds/uploaded/KDTMIWOGNC/XC777096-a13b.mp3
+155,gbif:2848553122,audio,CC-BY-NC-SA-4.0,Iain Woxvold,https://xeno-canto.org/sounds/uploaded/IASEWSJZCS/XC543567-Horornis%20haddeni_BAR2_1200%20m_20191030_122900.mp3
+156,gbif:2243695685,audio,CC-BY-NC-ND-4.0,Frank Lambert,https://xeno-canto.org/sounds/uploaded/YTUXOCTUEM/XC290385-Ceyx_%28lepidus%29_nigromaxilla-FL%20calls%20Chupukama%20Ridge%2017Sept15%2011.47am%201300m%20LS118242b.mp3
+157,gbif:2432418780,audio,CC-BY-NC-SA-4.0,Andria Kroner,https://xeno-canto.org/sounds/uploaded/JBRMIMGQQN/XC404513-2018_01_17_0937_Mariana_Kingfisher_XC.mp3
+158,gbif:2243820844,audio,CC-BY-NC-ND-2.5,Andrew Spencer,https://xeno-canto.org/sounds/uploaded/CDTGHVBGZP/Cinereous%20Finch2010-1-17-1.mp3
+159,gbif:4538103340,audio,CC-BY-NC-SA-4.0,Geoff Carey,https://xeno-canto.org/sounds/uploaded/LBWCUENEBH/XC875632-Graminicola-bengalensis-md058-15-6dB-NR-12dB-HP-700Hz.mp3
+160,gbif:2432408292,audio,CC-BY-NC-ND-2.5,Pat O'Donnell,https://xeno-canto.org/sounds/uploaded/DDPBJAQXVZ/Buff-fronted%20Quail%20Dove2.mp3
+161,gbif:6243768334,audio,CC-BY-NC-SA-4.0,African Bioacoustics Community,https://xeno-canto.org/sounds/uploaded/YSGTQVRQZI/XC1074281-20251214_CPT_AKaramitsos_XA60_A009C071_251214GH_SLE_250HP_-3dB_split.wav
+162,gbif:5827724461,audio,CC-BY-NC-4.0,Facundo Varela Barros,https://static.inaturalist.org/sounds/1636130.m4a?1757856483
+163,gbif:4508371947,audio,CC-BY-NC-ND-4.0,Peter Boesman,https://xeno-canto.org/sounds/uploaded/OOECIWCSWV/XC860136-LS_55781-Fuscous-Honeyeater-song-A.mp3
+164,gbif:4987746007,audio,CC-BY-NC-4.0,thephoxinus,https://static.inaturalist.org/sounds/1257536.wav?1732628909
+165,gbif:2814077763,audio,CC-BY-NC-4.0,Charmaine,https://static.inaturalist.org/sounds/115727.m4a?1593754949
+166,gbif:2992209407,audio,CC-BY-NC-ND-4.0,Frank Lambert,https://xeno-canto.org/sounds/uploaded/YTUXOCTUEM/XC599626-Locustella_caudata_sspp-FL%20X%20song%20ComVal%201200m%2015Feb20%207.18am%20LS114270c.mp3
+167,gbif:2243795189,audio,CC-BY-NC-SA-4.0,Ross Gallardy,https://xeno-canto.org/sounds/uploaded/FNIOJOZADD/XC403701-YellowFacedFlameback_Panay_052717_call2.mp3
+168,gbif:5995376360,audio,CC-BY-NC-SA-4.0,Greg Irving,https://xeno-canto.org/sounds/uploaded/YWRKFXUDUR/XC1008935-083-Hornbill---Writhed-%28Rhabdotorrhinus-leucocephalus%29-Call-JUN-0608h-170m-PICOPRoad4MindanaoPH_gi_8716.mp3
